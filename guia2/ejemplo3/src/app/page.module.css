@@ -1,0 +1,82 @@
+.main { display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding:
+  6rem; min-height: 100vh;
+  }
+  
+  .calculadora { max-width: 600px; height: 450px; padding: 20px; border: 1px solid #ccc; border-radius:
+  5px; background-color: #eceaea; display: flex;
+  flex-direction: column; justify-content: space-around;
+
+  }
+  .numeros {
+  margin-bottom: 10px;
+  }
+  .text { display: block; margin-bottom: 5px;color: black;
+  }
+  
+  .inputnum { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;background-color: #ccc;
+    color: black;
+  }
+  .button { font-size: 1.2em; padding: 10px; margin-right: 10px; border: 1px solid #ccc; border-radius:
+  5px; cursor: pointer;
+  }
+  .resultado { margin-top: 10px; font-weight: bold; color: black;
+  }
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px;
+    padding-bottom: 80px;
+  }
+
+  .main {
+    align-items: center;
+  }
+
+  .main ol {
+    text-align: center;
+  }
+
+  .ctas {
+    flex-direction: column;
+  }
+
+  .ctas a {
+    font-size: 14px;
+    height: 40px;
+    padding: 0 16px;
+  }
+
+  a.secondary {
+    min-width: auto;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}
